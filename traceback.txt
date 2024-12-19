@@ -1,0 +1,30 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 90, in script
+    python:
+  File "game/script.rpy", line 136, in <module>
+    generated_question = generate_question(venv_path, script_path, difficulty, service)
+  File "game/script.rpy", line 126, in generate_question
+    renpy.say(f"Error generating the question: {e}")
+TypeError: say() missing 1 required positional argument: 'what'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 90, in script
+    python:
+  File "/home/kevin/NEW FASE WP2.0/RenPay/renpy-8.3.4-sdk/renpy/ast.py", line 827, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/home/kevin/NEW FASE WP2.0/RenPay/renpy-8.3.4-sdk/renpy/python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 136, in <module>
+    generated_question = generate_question(venv_path, script_path, difficulty, service)
+  File "game/script.rpy", line 126, in generate_question
+    renpy.say(f"Error generating the question: {e}")
+TypeError: say() missing 1 required positional argument: 'what'
+
+Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.31 x86_64
+Ren'Py 8.3.4.24120703
+LearnAws 1.0
+Tue Dec 17 13:48:02 2024
